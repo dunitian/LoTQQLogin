@@ -1,0 +1,16 @@
+第一步：引入jq
+<script type='text/javascript' src='http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.4.2'></script>
+第二步：把 data-appid 替换成你的id，data-redirecturi 替换成你的回调地址
+<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101271485" data-redirecturi="http://www.dkill.net/Index" charset="utf-8"></script>
+第三步：引入lotqq.js
+<script src="JavaScript/lotqq.js"></script>
+第四步：传参以及设置你的回调函数（比如进行一些存储）
+<script type="text/javascript">
+	$.lotqq('101271485', 'http://www.dkill.net/Index', 'lotqq', function (data) {
+		//回调函数，进行一些你需要的存储~~~（data数组有你需要的数据）
+		console.log('Name:' + data.Name);
+		console.log('OpenId:' + data.OpenId);
+		console.log('AccessToken:' + data.AccessToken);
+		console.log('Figureurl:' + data.Figureurl);
+	});
+</script>
