@@ -14,3 +14,5 @@
 		console.log('Figureurl:' + data.Figureurl);
 	});
 </script>
+
+具体讲解：【开源】简单4步搞定QQ登录，无需什么代码功底【无语言界限】 http://www.cnblogs.com/dunitian/p/5055789.html#top
